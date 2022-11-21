@@ -33,10 +33,12 @@ nodes:
     protocol: TCP
 EOF
 
-echo "> 😊😊 Verify Cluster install"
 
-kubectl wait --for=condition=Ready=true node/kind-control-plane --timeout=30s
+echo " ✓ alias k=kubectl 📦 "
+##alias
+alias k=kubectl
 
-kubectl wait --for=condition=Ready=true node/kind-control-plane --timeout=30s
 
-kubectl wait --for=condition=Ready=true node/kind-control-plane --timeout=30s
+echo " ✓ helm repo add hashicorp https://helm.releases.hashicorp.com 📦 "
+##helm
+helm repo add hashicorp https://helm.releases.hashicorp.com
