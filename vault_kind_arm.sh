@@ -33,7 +33,6 @@ nodes:
     protocol: TCP
 EOF
 
-
 echo " ✓ alias k=kubectl 📦 "
 ##alias
 alias k=kubectl
@@ -42,3 +41,29 @@ alias k=kubectl
 echo " ✓ helm repo add hashicorp https://helm.releases.hashicorp.com 📦 "
 ##helm
 helm repo add hashicorp https://helm.releases.hashicorp.com
+
+
+
+echo "> 😊😊 Verify Cluster install"
+
+sleep 30
+
+echo "> 😊😊 Verify Cluster install...."
+
+sleep 30
+
+echo "> 😊😊 Verify Cluster install...."
+
+sleep 30
+
+kubectl wait --for=condition=Ready=true node/vault-control-plane --timeout=30s
+
+
+
+echo " ✓ kubectl create ns vault 📦 "
+##vault
+helm install consul hashicorp/consul --set global.name=consul --create-namespace --namespace vault --version 0.39.0
+
+
+
+echo "> done! 📦 "
