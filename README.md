@@ -18,6 +18,8 @@ Using outdated Helm chart as new one requires K8s v1.21.0 and the container imag
 
 Need to init & unseal Vault!
 
+
+example:
 ```
 kubectl -n vault exec -it vault-0 -- sh
 kubectl -n vault exec -it vault-1 -- sh
