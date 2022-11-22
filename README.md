@@ -8,6 +8,10 @@ Pods goes in pending state due to podAntiAffinity rules.
 
 Created 3 workers and it resolved this. Need to look into disabling this in the Helm chart.
 
+Using outdated Helm chart as new one requires K8s v1.21.0 and the container image I'm using is v1.20.0.
+
+`--version 0.39.0`
+
 ##
 
 ### Vault:
