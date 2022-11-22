@@ -1,8 +1,10 @@
 # 🚧🚧🚧🚧🚧 Under Construction 🚧🚧🚧🚧🚧
 
-##Issues
+## Issues
 
-Consul: Pods goes in pending state due to podAntiAffinity rules
+Consul: 
+
+Pods goes in pending state due to podAntiAffinity rules.
 
 Create 3 workers and it resolved this. Need to look into disabling this in the helm chart.
 
