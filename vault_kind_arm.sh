@@ -57,4 +57,4 @@ helm install vault hashicorp/vault --namespace vault
 
 echo "> done! 📦 "
 
-k get pods -n vault
+kubectl get pods -n vault
