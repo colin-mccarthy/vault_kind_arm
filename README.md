@@ -28,3 +28,9 @@ kubectl -n vault exec -it vault-2 -- vault status
 ```
 
 ##
+
+### Terraform Cloud Operator:
+
+Coming Soon!
+
+##
