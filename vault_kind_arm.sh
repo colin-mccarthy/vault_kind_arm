@@ -17,20 +17,8 @@ kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
 - role: control-plane
-  kubeadmConfigPatches:
-  - |
-    kind: InitConfiguration
-    nodeRegistration:
-      kubeletExtraArgs:
-        node-labels: "ingress-ready=true"
-        authorization-mode: "AlwaysAllow"
-  extraPortMappings:
-  - containerPort: 80
-    hostPort: 80
-    protocol: TCP
-  - containerPort: 443
-    hostPort: 443
-    protocol: TCP
+- role: worker
+- role: worker
 EOF
 
 echo " ✓ alias k=kubectl 📦 "
@@ -64,6 +52,8 @@ echo " ✓ kubectl create ns vault 📦 "
 ##vault
 helm install consul hashicorp/consul --set global.name=consul --create-namespace --namespace vault --version 0.39.0
 
-
+helm install vault hashicorp/vault --namespace vault
 
 echo "> done! 📦 "
+
+k get pods -n vault
