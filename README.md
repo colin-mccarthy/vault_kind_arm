@@ -8,7 +8,7 @@ Pods goes in pending state due to podAntiAffinity rules.
 
 Create 3 workers and it resolved this. Need to look into disabling this in the helm chart.
 
-
+##
 
 ### Vault:
 
@@ -27,3 +27,4 @@ kubectl -n vault exec -it vault-1 -- vault status
 kubectl -n vault exec -it vault-2 -- vault status
 ```
 
+##
