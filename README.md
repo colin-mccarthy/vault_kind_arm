@@ -39,4 +39,10 @@ kubectl -n vault exec -it vault-2 -- vault status
 
 Coming Soon!
 
-##
+## Access Vault 
+
+```
+kubectl port-forward -n vault \ svc/vault-ui 8200:8200
+```
+
+http://127.0.0.1/8200
