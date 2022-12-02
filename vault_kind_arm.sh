@@ -29,7 +29,7 @@ alias k=kubectl
 
 echo " ✓ helm repo add hashicorp https://helm.releases.hashicorp.com 📦 "
 ##helm
-helm repo add hashicorp https://helm.releases.hashicorp.com
+helm repo add hashicorp https://helm.releases.hashicorp.com --set='ui.enabled=true' --set='ui.serviceType=NodePort'
 
 
 
