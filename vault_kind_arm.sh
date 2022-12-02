@@ -29,7 +29,7 @@ alias k=kubectl
 
 echo " ✓ helm repo add hashicorp https://helm.releases.hashicorp.com 📦 "
 ##helm
-helm repo add hashicorp https://helm.releases.hashicorp.com --set='ui.enabled=true' --set='ui.serviceType=NodePort'
+helm repo add hashicorp https://helm.releases.hashicorp.com 
 
 
 
@@ -56,7 +56,7 @@ echo " ✓ kubectl create ns vault 📦 "
 #
 
 
-helm install vault hashicorp/vault --create-namespace --namespace vault
+helm install vault hashicorp/vault --create-namespace --namespace vault --set='ui.enabled=true' --set='ui.serviceType=NodePort'
 
 sleep 30
 
