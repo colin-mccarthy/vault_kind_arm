@@ -51,9 +51,14 @@ kubectl wait --for=condition=Ready=true node/vault-control-plane --timeout=30s
 
 echo " ✓ kubectl create ns vault 📦 "
 ##vault
-helm install consul hashicorp/consul --set global.name=consul --create-namespace --namespace vault --version 0.39.0
+#
+#helm install consul hashicorp/consul --set global.name=consul --create-namespace --namespace vault --version 0.39.0
+#
 
-helm install vault hashicorp/vault --namespace vault
+
+helm install vault hashicorp/vault --create-namespace --namespace vault
+
+sleep 30
 
 echo "> done! 📦 "
 
