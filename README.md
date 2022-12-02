@@ -42,7 +42,12 @@ Coming Soon!
 ## Access Vault 
 
 
-`kubectl port-forward -n vault \ svc/vault-ui 8200:8200`
+```
+kubectl port-forward -n vault \
+  svc/vault-ui 8200:8200
+```  
+
+
 
 /etc/hosts
 ```
@@ -50,6 +55,10 @@ Coming Soon!
 ```
 
 http://vault/8200
+
+bind: address already in use unable to create listener: Error
+
+`lsof -ti:8200 | xargs kill -9`
 
 # Get root token
 
