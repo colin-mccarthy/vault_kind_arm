@@ -2,6 +2,58 @@
 
 ## 
 
+### Access Vault 
+
+
+http://vault/8200
+
+
+```
+kubectl port-forward -n vault \
+  svc/vault-ui 8200:8200
+```  
+
+
+
+/etc/hosts
+```
+127.0.0.1 vault
+```
+
+
+
+bind: address already in use unable to create listener: Error
+
+`lsof -ti:8200 | xargs kill -9`
+
+
+##
+
+### Get root token
+
+
+`kubectl logs -f vault-0 -n vault`
+
+```
+WARNING! dev mode is enabled! In this mode, Vault runs entirely in-memory
+and starts unsealed with a single unseal key. The root token is already
+authenticated to the CLI, so you can immediately begin using Vault.
+
+You may need to set the following environment variables:
+
+    $ export VAULT_ADDR='http://[::]:8200'
+
+The unseal key and root token are displayed below in case you want to
+seal/unseal the Vault or re-authenticate.
+
+Unseal Key: <foo>
+Root Token: <foo>
+
+Development mode should NOT be used in production installations!
+```
+
+##
+
 ### Consul: 
 
 Pods goes in pending state due to podAntiAffinity rules.
@@ -16,7 +68,7 @@ Using outdated Helm chart as new one requires K8s v1.21.0, meanwhile the ARM com
 
 ### Vault:
 
-Need to init & unseal Vault!
+Need to init & unseal Vault?
 
 
 example:
@@ -39,46 +91,3 @@ kubectl -n vault exec -it vault-2 -- vault status
 
 Coming Soon!
 
-## Access Vault 
-
-
-```
-kubectl port-forward -n vault \
-  svc/vault-ui 8200:8200
-```  
-
-
-
-/etc/hosts
-```
-127.0.0.1 vault
-```
-
-http://vault/8200
-
-bind: address already in use unable to create listener: Error
-
-`lsof -ti:8200 | xargs kill -9`
-
-# Get root token
-
-
-`kubectl logs -f vault-0 -n vault`
-
-```
-WARNING! dev mode is enabled! In this mode, Vault runs entirely in-memory
-and starts unsealed with a single unseal key. The root token is already
-authenticated to the CLI, so you can immediately begin using Vault.
-
-You may need to set the following environment variables:
-
-    $ export VAULT_ADDR='http://[::]:8200'
-
-The unseal key and root token are displayed below in case you want to
-seal/unseal the Vault or re-authenticate.
-
-Unseal Key: <foo>
-Root Token: <foo>
-
-Development mode should NOT be used in production installations!
-```
