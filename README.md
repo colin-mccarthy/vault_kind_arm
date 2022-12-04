@@ -48,6 +48,24 @@ bind: address already in use unable to create listener: Error
 
 [Exercise 06 - Under Construction 👷‍♂️](./exercises/00_notes.md)
 
+
+##
+
+### K8s secret injection using sidecar:
+
+
+
+[Exercise 00 - Under Construction 👷‍♂️](./exercises/00_notes.md)
+
+[Exercise 01 - Under Construction 👷‍♂️](./exercises/00_notes.md)
+
+[Exercise 02 - Under Construction 👷‍♂️](./exercises/00_notes.md)
+
+[Exercise 03 - Under Construction 👷‍♂️](./exercises/00_notes.md)
+
+[Exercise 04 - Under Construction 👷‍♂️](./exercises/00_notes.md)
+
+
 ##
 
 ### Terraform Cloud Operator:
