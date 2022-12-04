@@ -9,9 +9,9 @@ Secrets ➡ Enable new engine ➡ select KV ➡ select next
 
 create new secret ➡
 
-`path: vars`
+path: `vars`
 
-`Secret Data: key = ansible_become_method    value = foo`
+Secret Data: key = `ansible_become_method`    value = `foo`
 
 
 
