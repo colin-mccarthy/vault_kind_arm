@@ -3,7 +3,7 @@
 ### Create your first policy
 
 
-1. Policies ➡ create new ACL policy ➡ paste 
+1. Policies ➡ create new ACL policy ➡ paste code from `secret_policy`
 
 2. Access ➡ userpass ➡ edit user ➡ Tokens ➡ Generated Token's Policies ➡ add your new `secret_policy`
 
