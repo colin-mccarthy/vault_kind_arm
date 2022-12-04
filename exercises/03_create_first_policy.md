@@ -40,3 +40,29 @@ capabilities = ["create", "read", "update"]
 
 
 ```
+
+##
+
+### Now add a rule to allow a user to delete secret
+
+
+secret_policy
+```
+path "kv/developers/ansible/metadata/*"{
+capabilities = ["list"]
+}
+
+
+
+path "kv/developers/ansible/data/*"{
+capabilities = ["create", "read", "update", "delete"]
+}
+
+
+path "kv/developers/ansible/delete/*"{
+capabilities = ["delete", "update"]
+}
+
+
+
+```
