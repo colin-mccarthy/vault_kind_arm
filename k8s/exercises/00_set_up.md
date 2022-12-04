@@ -15,13 +15,12 @@ find your address
 / $ 
 ```
 
-Clone the Learn Vault Kubernetes repo
+
+##
+
+### Clone the Learn Vault Kubernetes repo
 
 `git clone https://github.com/hashicorp-education/learn-vault-kubernetes/`
-
-
-Create and initialize Kubernetes secrets engine on vault
-
 
 
 Create a new namespace in Kubernetes
@@ -30,3 +29,8 @@ Create a new namespace in Kubernetes
 
 Start up an nginx server on your KinD cluster
 `kubectl run nginx --image=nginx --namespace demo`
+
+
+Create and initialize Kubernetes secrets engine on vault
+
+`vault secrets enable kubernetes`
