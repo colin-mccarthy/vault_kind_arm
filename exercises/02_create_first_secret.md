@@ -2,19 +2,18 @@
 
 
 
-Secrets ➡ Enable new engine > select KV > select next
+Secrets ➡ Enable new engine ➡ select KV ➡ select next
 
-```
 
-path: kv/developers/ansible
+`path: kv/developers/ansible`
 
-create new secret > 
+create new secret ➡
 
-path: vars
+`path: vars`
 
-Secret Data: key = ansible_become_method    value = foo
+`Secret Data: key = ansible_become_method    value = foo`
 
-```
+
 
 
 Create a second secret at a new path
