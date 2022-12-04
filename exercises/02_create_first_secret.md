@@ -16,14 +16,13 @@ Secret Data: key = `ansible_become_method`    value = `foo`
 
 
 
-Create a second secret at a new path
+### Create a second secret at a new path
 
-```
 
-create new secret > 
+Secrets ➡ kv/developers/ansible ➡ create new secret ➡
 
-path: extra_vars
 
-Secret Data: key = ansible_pass    value = foo
+path: `extra_vars`
 
-```
+Secret Data: key = `ansible_pass`    value = `foo`
+
