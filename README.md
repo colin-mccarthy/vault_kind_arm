@@ -55,7 +55,7 @@ bind: address already in use unable to create listener: Error
 
 
 
-[Exercise 00 - Under Construction 👷‍♂️](./exercises/00_notes.md)
+[Exercise 00 - Set up 👷‍♂️](./k8s/exercises/00_set_up.md)
 
 [Exercise 01 - Under Construction 👷‍♂️](./exercises/00_notes.md)
 
