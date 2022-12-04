@@ -9,7 +9,7 @@
 
 3. log out ➡ log back in
 
-4. User should now see secret engine metadata
+4. User should now see secret engine metadata for `kv/developers/ansible`
 
 
 secret_policy
