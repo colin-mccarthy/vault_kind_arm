@@ -30,6 +30,26 @@ bind: address already in use unable to create listener: Error
 
 ##
 
+### Exercises:
+
+
+
+[Exercise 00 - CLI Tools](./exercises/00_cli_tools.md)
+
+[Exercise 01 - Docker Push to local Harbor](./exercises/01_docker_push.md)
+
+[Exercise 02 - Install TBS using Dockerhub](./exercises/02_tbs_dockerhub.md)
+
+[Exercise 03 - Harbor as a Dockerhub proxy](./exercises/03_harbor-as-docker-proxy.md)
+
+[Exercise 04 - Install the Tanzu CLI](./exercises/04_tanzu_cli_install.md)
+
+[Exercise 05 - Install TAP](./exercises/05_tap_install.md)
+
+
+
+##
+
 ### Terraform Cloud Operator:
 
 Coming Soon!
