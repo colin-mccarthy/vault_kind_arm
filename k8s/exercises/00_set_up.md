@@ -14,7 +14,13 @@ find your address
 10.96.0.1
 / $ 
 ```
+enable k8s auth method via gui
 
+add hostname `https://10.96.0.1:443'
+
+create service account
+
+`kubectl create sa internal-app'
 
 ##
 
