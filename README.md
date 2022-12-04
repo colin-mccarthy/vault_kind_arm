@@ -36,7 +36,7 @@ bind: address already in use unable to create listener: Error
 
 [Exercise 00 - CLI Tools](./exercises/00_cli_tools.md)
 
-[Exercise 01 - Docker Push to local Harbor](./exercises/01_docker_push.md)
+[Exercise 01 - Docker Push to local Harbor](./exercises/01_create_auth_method_via_cli.md)
 
 [Exercise 02 - Install TBS using Dockerhub](./exercises/02_tbs_dockerhub.md)
 
