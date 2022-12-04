@@ -21,7 +21,7 @@ capabilities = ["list"]
 
 ##
 
-example
+more examples:
 ```
 path "kv/metadata/users/"{
 capabilities = ["list"]
