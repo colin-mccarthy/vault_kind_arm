@@ -22,8 +22,15 @@ capabilities = ["list"]
 ##
 
 more examples:
+
 ```
-path "kv/metadata/users/"{
+path "kv/developers/ansible/metadata/"{
 capabilities = ["list"]
 }
+
+
+path "kv/developers/ansible/metadata/users/"{
+capabilities = ["list"]
+}
+
 ```
