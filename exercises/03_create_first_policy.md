@@ -22,7 +22,7 @@ capabilities = ["list"]
 
 ##
 
-### Now add a rule to allow a user to create, read, and update a secret
+### Now add a rule to allow a user to create, read, update, and delete a secret
 
 
 secret_policy
@@ -34,7 +34,7 @@ capabilities = ["list"]
 
 
 path "kv/developers/ansible/data/*"{
-capabilities = ["create", "read", "update"]
+capabilities = ["create", "read", "update", "delete"]
 }
 
 
