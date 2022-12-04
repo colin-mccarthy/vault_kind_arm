@@ -5,7 +5,7 @@
 ### Access Vault 
 
 
-http://vault/8200
+http://vault/8200   token=root
 
 
 ```
