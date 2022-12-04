@@ -20,7 +20,7 @@ add hostname `https://10.96.0.1:443'
 
 create service account
 
-`kubectl create sa internal-app'
+`kubectl create sa internal-app`
 
 ##
 
