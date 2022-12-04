@@ -1,6 +1,6 @@
 ##
 
-### Set up
+### Set up:
 
 
 exec into the vault container
