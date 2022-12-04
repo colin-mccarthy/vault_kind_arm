@@ -13,7 +13,7 @@ path: `vars`
 
 Secret Data: key = `ansible_become_method`    value = `foo`
 
-##
+
 
 
 ### Create a second secret at a new path
@@ -27,4 +27,4 @@ path: `extra_vars`
 
 Secret Data: key = `ansible_pass`    value = `foo`
 
-##
+
