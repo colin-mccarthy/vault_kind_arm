@@ -40,11 +40,11 @@ bind: address already in use unable to create listener: Error
 
 [Exercise 02 - Create your first policy](./exercises/02_create_first_policy.md)
 
-[Exercise 03 - Harbor as a Dockerhub proxy](./exercises/03_harbor-as-docker-proxy.md)
+[Exercise 03 - Under Construction](./exercises/00_notes.md)
 
-[Exercise 04 - Install the Tanzu CLI](./exercises/04_tanzu_cli_install.md)
+[Exercise 04 - Under Construction](./exercises/00_notes.md)
 
-[Exercise 05 - Install TAP](./exercises/05_tap_install.md)
+[Exercise 05 - Under Construction](./exercises/00_notes.md)
 
 
 
