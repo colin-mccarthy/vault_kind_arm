@@ -57,13 +57,13 @@ bind: address already in use unable to create listener: Error
 
 [Exercise 00 - Set up 👷‍♂️](./k8s/exercises/00_set_up.md)
 
-[Exercise 01 - Under Construction 👷‍♂️](./exercises/00_notes.md)
+[Exercise 01 - Under Construction 👷‍♂️](./k8s/exercises/00_set_up.md)
 
-[Exercise 02 - Under Construction 👷‍♂️](./exercises/00_notes.md)
+[Exercise 02 - Under Construction 👷‍♂️](./k8s/exercises/00_set_up.md)
 
-[Exercise 03 - Under Construction 👷‍♂️](./exercises/00_notes.md)
+[Exercise 03 - Under Construction 👷‍♂️](./k8s/exercises/00_set_up.md)
 
-[Exercise 04 - Under Construction 👷‍♂️](./exercises/00_notes.md)
+[Exercise 04 - Under Construction 👷‍♂️](./k8s/exercises/00_set_up.md)
 
 
 ##
