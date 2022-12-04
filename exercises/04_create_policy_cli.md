@@ -9,7 +9,7 @@ Create file on your local machine
 
 
 
-my_policy
+my_policy.hcl
 ```
 path "kv/developers/ansible/metadata/*"{
 capabilities = ["list", "create", "read", "update", "delete"]
