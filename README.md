@@ -38,7 +38,7 @@ bind: address already in use unable to create listener: Error
 
 [Exercise 01 - Create Auth method via CLI](./exercises/01_create_auth_method_via_cli.md)
 
-[Exercise 02 - Install TBS using Dockerhub](./exercises/02_tbs_dockerhub.md)
+[Exercise 02 - Create your first policy](./exercises/02_create_first_policy.md)
 
 [Exercise 03 - Harbor as a Dockerhub proxy](./exercises/03_harbor-as-docker-proxy.md)
 
