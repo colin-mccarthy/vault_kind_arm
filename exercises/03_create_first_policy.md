@@ -14,25 +14,29 @@
 
 secret_policy
 ```
-path "kv/developers/ansible/metadata/users/"{
+path "kv/developers/ansible/metadata/*"{
 capabilities = ["list"]
 }
 ```
 
+
 ##
 
-### Now add more rules to your policy
+### Now add a rule to allow a user to create, read, and update a secret
 
 
 secret_policy
 ```
-path "kv/developers/ansible/metadata/"{
+path "kv/developers/ansible/metadata/*"{
 capabilities = ["list"]
 }
 
 
-path "kv/developers/ansible/metadata/users/"{
-capabilities = ["list"]
+
+path "kv/developers/ansible/data/*"{
+capabilities = ["create", "read", "update"]
 }
+
+
 
 ```
