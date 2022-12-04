@@ -49,7 +49,7 @@ capabilities = ["create", "read", "update"]
 secret_policy
 ```
 path "kv/developers/ansible/metadata/*"{
-capabilities = ["list"]
+capabilities = ["list", "create", "read", "update", "delete"]
 }
 
 
