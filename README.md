@@ -42,7 +42,7 @@ bind: address already in use unable to create listener: Error
 
 [Exercise 03 - Create your first policy 🖥-GUI](./exercises/03_create_first_policy.md)
 
-[Exercise 04 - Create a policy via CLI 👷‍♂️](./exercises/04_create_policy_cli.md)
+[Exercise 04 - Create a policy via CLI](./exercises/04_create_policy_cli.md)
 
 [Exercise 05 - Under Construction 👷‍♂️](./exercises/00_notes.md)
 
