@@ -21,8 +21,10 @@ capabilities = ["list"]
 
 ##
 
-more examples:
+### More examples:
 
+
+secret_policy
 ```
 path "kv/developers/ansible/metadata/"{
 capabilities = ["list"]
