@@ -16,7 +16,7 @@ find your address
 ```
 enable k8s auth method via gui
 
-add hostname `https://10.96.0.1:443'
+add hostname `https://10.96.0.1:443`
 
 create service account
 
