@@ -21,7 +21,7 @@ capabilities = ["list"]
 
 ##
 
-### More examples:
+### Now add more rules to your policy
 
 
 secret_policy
