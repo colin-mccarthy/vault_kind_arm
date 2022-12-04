@@ -63,4 +63,8 @@ Subcommands:
 
 
 
+##
 
+```
+vault write auth/userpass/users/patrick password=krustykrab policy=secret_policy
+```
