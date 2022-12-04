@@ -3,7 +3,7 @@
 ### Set up:
 
 
-exec into the vault container
+Exec into the vault container
 
 `kubectl -n vault exec -it vault-0 -- sh`
 
@@ -14,3 +14,19 @@ find your address
 10.96.0.1
 / $ 
 ```
+
+Clone the Learn Vault Kubernetes repo
+
+`git clone https://github.com/hashicorp-education/learn-vault-kubernetes/`
+
+
+Create and initialize Kubernetes secrets engine on vault
+
+
+
+Create a new namespace in Kubernetes
+`kubectl create namespace demo`
+
+
+Start up an nginx server on your KinD cluster
+`kubectl run nginx --image=nginx --namespace demo`
