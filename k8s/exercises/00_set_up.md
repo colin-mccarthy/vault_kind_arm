@@ -40,3 +40,10 @@ Start up an nginx server on your KinD cluster
 Create and initialize Kubernetes secrets engine on vault
 
 `vault secrets enable kubernetes`
+
+
+##
+
+### resources
+
+https://developer.hashicorp.com/vault/tutorials/kubernetes/kubernetes-secrets-engine
