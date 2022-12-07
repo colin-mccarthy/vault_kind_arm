@@ -9,8 +9,7 @@ http://vault/8200   token=root
 
 
 ```
-kubectl port-forward -n vault \
-  svc/vault-ui 8200:8200
+kubectl port-forward svc/vault 8200 -n vault
 ```  
 
 
