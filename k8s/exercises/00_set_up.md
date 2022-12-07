@@ -25,12 +25,12 @@ add hostname `https://10.96.0.1:443`
 
 
 
-### create service account
+## create service account
 
 `kubectl create sa internal-app`
 
 
-### create policy
+## create policy
 
 internal-app
 
@@ -41,21 +41,21 @@ capabilities = ["read"]
 ```
 
 
-### create role
+## create role
 
 name: internal-app
 ServiceAccount: internal-app
 policy: internal-app
 
 
-### create secret
+## create secret
 
 internal/database/config > key,value
 
 
 
 
-### deploy app
+## deploy app
 
 `k apply -f deployment.yaml`
 
