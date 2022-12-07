@@ -3,7 +3,7 @@
 ### Set Up
 
 ```
-helm install postgres .
+helm install postgres . --namespace vault
 ```
 
 
