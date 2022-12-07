@@ -18,13 +18,24 @@ enable k8s auth method via gui
 
 add hostname `https://10.96.0.1:443`
 
-create service account
+### create service account
 
 `kubectl create sa internal-app`
 
 
+### create policy
 
-`k exec -it orgchart-f4c6cbd47-sj962 -c vault-agent  -- sh `
+
+
+
+
+### 
+
+`k apply -f deployment.yaml`
+
+`k exec -it orgchart-f4c6cbd47-sj962 -c vault-agent  -- sh`
+
+`cat vault/secrets/database-config.txt`
 
 
 
