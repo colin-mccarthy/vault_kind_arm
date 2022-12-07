@@ -1,6 +1,6 @@
 ##
 
-### Set up:
+### Vault sidecar injection in GUI (KV)
 
 ##
 
@@ -25,12 +25,12 @@ add hostname `https://10.96.0.1:443`
 
 
 
-## create service account
+## create a service account
 
 `kubectl create sa internal-app`
 
 
-## create policy
+## create policy in GUI
 
 internal-app
 
@@ -41,7 +41,7 @@ capabilities = ["read"]
 ```
 
 
-## create role
+## create a role in GUI
 
 name: internal-app
 
@@ -50,14 +50,14 @@ ServiceAccount: internal-app
 policy: internal-app
 
 
-## create secret
+## create a secret in GUI
 
 internal > database/config > key,value
 
 
 
 
-## deploy app
+## deploy the app
 
 `k apply -f deployment.yaml`
 
