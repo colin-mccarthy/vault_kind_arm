@@ -22,6 +22,19 @@ create service account
 
 `kubectl create sa internal-app`
 
+
+```
+k patch deployment postgres --patch "$(cat patch.yaml)" 
+```
+
+
+
+
+
+
+
+
+
 ##
 
 ### Clone the Learn Vault Kubernetes repo
