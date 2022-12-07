@@ -64,6 +64,18 @@ bind: address already in use unable to create listener: Error
 
 ##
 
+### Dynamic db secrets:
+
+
+
+[Exercise 00 - Set up 👷‍♂️](./db/exercises/00_set_up.md)
+
+[Exercise 01 - Under Construction 👷‍♂️](./db/exercises/00_set_up.md)
+
+
+
+##
+
 ### Terraform Cloud Operator:
 
 Coming Soon!
