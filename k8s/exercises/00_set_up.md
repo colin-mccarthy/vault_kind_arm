@@ -22,10 +22,14 @@ create service account
 
 `kubectl create sa internal-app`
 
+`helm install postgres . --namespace vault`
 
-```
-k patch deployment postgres --patch "$(cat patch.yaml)" 
-```
+`k get pods -n vault`
+
+`k patch deployment postgres --patch "$(cat patch.yaml)"`
+
+`k get pods -n vault`
+
 
 `kubectl  exec -it postgres-7b448c59b9-fndhk  -- sh`
 
