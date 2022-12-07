@@ -44,7 +44,9 @@ capabilities = ["read"]
 ## create role
 
 name: internal-app
+
 ServiceAccount: internal-app
+
 policy: internal-app
 
 
