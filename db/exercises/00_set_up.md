@@ -2,7 +2,13 @@
 
 ### Set Up
 
+```
+helm install postgres .
+```
+
 
 ```
-vault 
+
+
+vault secrets enable database
 ```
