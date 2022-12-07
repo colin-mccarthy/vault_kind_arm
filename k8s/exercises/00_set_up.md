@@ -27,7 +27,7 @@ create service account
 k patch deployment postgres --patch "$(cat patch.yaml)" 
 ```
 
-
+`kubectl  exec -it postgres-7b448c59b9-fndhk  -- sh`
 
 
 
