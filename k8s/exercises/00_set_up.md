@@ -29,7 +29,10 @@ add hostname `https://10.96.0.1:443`
 
 
 
-### 
+
+
+
+### deploy app
 
 `k apply -f deployment.yaml`
 
