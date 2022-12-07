@@ -30,25 +30,6 @@ create service account
 
 
 
-##
-
-### Clone the Learn Vault Kubernetes repo
-
-`git clone https://github.com/hashicorp-education/learn-vault-kubernetes/`
-
-
-Create a new namespace in Kubernetes
-`kubectl create namespace demo`
-
-
-Start up an nginx server on your KinD cluster
-`kubectl run nginx --image=nginx --namespace demo`
-
-
-Create and initialize Kubernetes secrets engine on vault
-
-`vault secrets enable kubernetes`
-
 
 ##
 
