@@ -2,21 +2,28 @@
 
 ### Set up:
 
+##
 
-Exec into the vault container
+
+## Exec into the vault container
 
 `kubectl -n vault exec -it vault-0 -- sh`
 
 find your address
+
 ```
 / $
 / $ echo $KUBERNETES_PORT_443_TCP_ADDR
 10.96.0.1
 / $ 
 ```
-enable k8s auth method via gui
+
+
+## enable k8s auth method via gui
 
 add hostname `https://10.96.0.1:443`
+
+
 
 ### create service account
 
@@ -25,7 +32,23 @@ add hostname `https://10.96.0.1:443`
 
 ### create policy
 
+internal-app
 
+```
+path "internal/data/database/config"{
+capabilities = ["read"]
+}
+```
+
+
+### create role
+
+name: internal-app
+ServiceAccount: internal-app
+policy: internal-app
+
+
+### create secret
 
 
 
