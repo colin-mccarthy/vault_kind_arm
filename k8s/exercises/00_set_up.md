@@ -52,7 +52,7 @@ policy: internal-app
 
 ## create secret
 
-internal/database/config > key,value
+internal > database/config > key,value
 
 
 
