@@ -33,7 +33,7 @@ create service account
 
 `kubectl  exec -it postgres-7b448c59b9-fndhk  -- sh`
 
-
+`k exec -it orgchart-f4c6cbd47-sj962 -c vault-agent  -- sh `
 
 
 
