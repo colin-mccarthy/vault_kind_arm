@@ -24,11 +24,11 @@ create service account
 
 `helm install postgres . --namespace vault`
 
-`k get pods -n vault`
+`k -n vault get pods`
 
-`k patch deployment postgres --patch "$(cat patch.yaml)"`
+`k -n vault patch deployment postgres --patch "$(cat patch.yaml)"`
 
-`k get pods -n vault`
+`k -n vault get pods`
 
 
 `kubectl  exec -it postgres-7b448c59b9-fndhk  -- sh`
