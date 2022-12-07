@@ -75,3 +75,6 @@ internal > database/config > key,value
 ### resources
 
 https://developer.hashicorp.com/vault/tutorials/kubernetes/kubernetes-secrets-engine
+
+
+`kubectl get mutatingwebhookconfigurations`
