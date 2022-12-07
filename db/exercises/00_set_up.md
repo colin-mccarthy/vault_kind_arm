@@ -12,12 +12,12 @@ vault secrets enable database
 ```
 
 ```
-`helm install postgres . --namespace vault`
+`helm install postgres .`
 
-`k -n vault get pods`
+`k get pods`
 
-`k -n vault patch deployment postgres --patch "$(cat patch.yaml)"`
+`k patch deployment postgres --patch "$(cat patch.yaml)"`
 
-`k -n vault get pods`
+`k get pods`
 
 ```
