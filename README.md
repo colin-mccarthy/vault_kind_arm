@@ -54,7 +54,7 @@ bind: address already in use unable to create listener: Error
 
 
 
-[Exercise 00 - Set up with 🖥-GUI👷‍♂️](./k8s/exercises/00_set_up.md)
+[Exercise 00 - Set up with 🖥-GUI](./k8s/exercises/00_set_up.md)
 
 [Exercise 01 - Set up with CLI 👷‍♂️](./k8s/exercises/01_set_up_cli.md)
 
@@ -67,7 +67,7 @@ bind: address already in use unable to create listener: Error
 
 
 
-[Exercise 00 - Set up 👷‍♂️](./db/exercises/00_set_up.md)
+[Exercise 00 - Under Construction 👷‍♂️](./db/exercises/00_set_up.md)
 
 [Exercise 01 - Under Construction 👷‍♂️](./db/exercises/00_set_up.md)
 
