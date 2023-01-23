@@ -75,7 +75,7 @@ bind: address already in use unable to create listener: Error
 
 ##
 
-### Terraform Cloud Operator:
+### Vault Enterprise License
 
-Coming Soon!
+https://developer.hashicorp.com/vault/docs/platform/k8s/helm/enterprise
 
