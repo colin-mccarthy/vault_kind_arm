@@ -4,7 +4,7 @@
 
 ##
 
-### Access Vault 
+
 
 ### Port forward: 
 
@@ -48,7 +48,7 @@ Development mode should NOT be used in production installations!
 ```
 
 
-### Access GUI:
+### Access Vault:
 
 `http://vault/8200`   
 
