@@ -22,12 +22,35 @@ kubectl port-forward svc/vault 8200 -n vault
 ```
 
 
-### access GUI
-
-`http://vault/8200`   `token=root`
 
 
+### Get root token:
 
+
+`kubectl logs -f vault-0 -n vault`
+
+```
+WARNING! dev mode is enabled! In this mode, Vault runs entirely in-memory
+and starts unsealed with a single unseal key. The root token is already
+authenticated to the CLI, so you can immediately begin using Vault.
+
+You may need to set the following environment variables:
+
+    $ export VAULT_ADDR='http://[::]:8200'
+
+The unseal key and root token are displayed below in case you want to
+seal/unseal the Vault or re-authenticate.
+
+Unseal Key: <foo>
+Root Token: <foo>
+
+Development mode should NOT be used in production installations!
+```
+
+
+### access GUI:
+
+`http://vault/8200`   
 
 
 
