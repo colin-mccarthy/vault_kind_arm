@@ -67,7 +67,7 @@ bind: address already in use unable to create listener: Error
 
 
 
-[Exercise 00 - Notes](./exercises/00_setup.md)
+[Exercise 00 - Set Up](./exercises/00_setup.md)
 
 
 
@@ -76,8 +76,6 @@ bind: address already in use unable to create listener: Error
 ### Exercises:
 
 
-
-[Exercise 00 - Notes](./exercises/00_notes.md)
 
 [Exercise 01 - Create Auth method via CLI](./exercises/01_create_auth_method_via_cli.md)
 
