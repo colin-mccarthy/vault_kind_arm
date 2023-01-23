@@ -1,5 +1,20 @@
 # 🚧🚧🚧🚧🚧 Under Construction 🚧🚧🚧🚧🚧
 
+
+
+This repo supports standing up Vault on KinD using Docker or Podman.
+
+Just run the appropriate shell script above depending on your provider.
+
+
+example:
+
+`bash kind_arm_podman.sh`
+
+
+These scripts have been tested on an M1 ARM Macbook but should work on Intel as well.
+
+
 ##
 
 ### Set Up:
