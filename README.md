@@ -54,6 +54,8 @@ Development mode should NOT be used in production installations!
 
 
 
+### Troubleshooting:
+
 bind: address already in use unable to create listener: Error
 
 `lsof -ti:8200 | xargs kill -9`
