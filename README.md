@@ -61,6 +61,14 @@ bind: address already in use unable to create listener: Error
 
 `lsof -ti:8200 | xargs kill -9`
 
+##
+
+### Set Up:
+
+
+
+[Exercise 00 - Notes](./exercises/00_setup.md)
+
 
 
 ##
