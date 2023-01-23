@@ -6,7 +6,7 @@
 
 ### Access Vault 
 
-### port forward: 
+### Port forward: 
 
 
 ```
@@ -14,7 +14,7 @@ kubectl port-forward svc/vault 8200 -n vault
 ```  
 
 
-### set up DNS: 
+### Set up DNS: 
 
 /etc/hosts
 ```
@@ -48,11 +48,12 @@ Development mode should NOT be used in production installations!
 ```
 
 
-### access GUI:
+### Access GUI:
 
 `http://vault/8200`   
 
 
+##
 
 ### Troubleshooting:
 
