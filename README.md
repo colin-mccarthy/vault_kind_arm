@@ -4,6 +4,8 @@
 
 ##
 
+### Access Vault 
+
 ### port forward: 
 
 
@@ -11,17 +13,20 @@
 kubectl port-forward svc/vault 8200 -n vault
 ```  
 
-## 
 
-### Access Vault 
-
+### set up DNS: 
 
 /etc/hosts
 ```
 127.0.0.1 vault
 ```
 
+
+### access GUI
+
 `http://vault/8200`   `token=root`
+
+
 
 
 
