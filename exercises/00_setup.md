@@ -53,7 +53,9 @@ bind: address already in use unable to create listener: Error
 
 ### Notes:
 
-Need to init & unseal Vault?
+##
+
+### Need to init & unseal Vault?
 
 
 example:
@@ -71,7 +73,6 @@ kubectl -n vault exec -it vault-2 -- vault status
 ```
 
 
-##
 
 ### Consul: 
 
