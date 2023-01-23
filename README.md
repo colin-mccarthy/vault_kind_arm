@@ -1,23 +1,28 @@
 # 🚧🚧🚧🚧🚧 Under Construction 🚧🚧🚧🚧🚧
 
-## 
-
-### Access Vault 
 
 
-http://vault/8200   token=root
+##
+
+### port forward: 
 
 
 ```
 kubectl port-forward svc/vault 8200 -n vault
 ```  
 
+## 
+
+### Access Vault 
 
 
 /etc/hosts
 ```
 127.0.0.1 vault
 ```
+
+`http://vault/8200`   `token=root`
+
 
 
 
