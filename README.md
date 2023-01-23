@@ -12,7 +12,7 @@ example:
 `bash vault_kind_podman.sh` or `bash vault_kind_docker.sh`
 
 
-These scripts have been tested on an M1 ARM Macbook but should work on Intel as well.
+These scripts have been tested on my M1 ARM Macbook but should work on Intel as well.
 
 
 ##
