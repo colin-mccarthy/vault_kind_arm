@@ -57,8 +57,3 @@ Using outdated Helm chart as new one requires K8s v1.21.0, meanwhile the ARM com
 
 `--version 0.39.0`
 
-##
-
-### port forward: 
-
-`kubectl port-forward svc/vault 8200 -n vault`
