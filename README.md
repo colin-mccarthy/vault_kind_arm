@@ -71,7 +71,7 @@ These scripts have been tested on my M1 ARM Macbook but should work on Intel as 
 
 ##
 
-### Vault Enterprise License
+### Vault Enterprise License:
 
 Check Vault license status
 
