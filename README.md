@@ -73,5 +73,15 @@ These scripts have been tested on my M1 ARM Macbook but should work on Intel as 
 
 ### Vault Enterprise License
 
+Check Vault license status
+
+```
+kubectl -n vault  exec -ti vault-0 -- vault license get
+```
+
+##
+
+### Resources
+
 https://developer.hashicorp.com/vault/docs/platform/k8s/helm/enterprise
 
