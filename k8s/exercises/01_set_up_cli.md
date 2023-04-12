@@ -20,6 +20,12 @@ find your address
 
 
 ## enable k8s auth method
+```
+vault auth enable kubernetes
+
+vault write auth/kubernetes/config \
+    kubernetes_host="https://$KUBERNETES_PORT_443_TCP_ADDR:443"
+```
 
 hostname `https://10.96.0.1:443`
 
