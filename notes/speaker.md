@@ -13,8 +13,7 @@ makes all this work. This should really come in handy if you wanted to play arou
 setup steps for a minute. I'm running a three node Kubernetes cluster here on Google's GK. This cluster doesn't have vault or the Vault Key eats 
 tool installed yet. So let's just quickly do that. 
 
-The recommended installation method for all this is to use the latest vault Helm chart, which 
-now supports the Vault Key injection functionality. I've already downloaded this behind the scenes. So let's configure a demo namespace and set 
+The recommended installation method for all this is to use the latest vault Helm chart, which now supports the Vault Key injection functionality. I've already downloaded this behind the scenes. So let's configure a demo namespace and set 
 our context to it. And we'll install vault using the vault Helm chart, which I already downloaded. As you can see, I'm setting the vault Helm 
 chart to use dev mode, which can come in really handy when you're playing around with stuff like this, since you don't have to set a lot of stuff up.
 Alright, so we have vault up and running along with our vault injection web service. Behind the scenes here, this injection service registered itself 
@@ -24,7 +23,9 @@ We'll chat more about this in just a minute.
 Let's connect to vault and we're going to go through some setup steps, we're going to 
 configure a policy named apt for this demo. This is a very non restrictive policy and in production setting, you'd likely lock this down a 
 little bit more. But since this is an example, it's more than adequate. Next, we want to configure the vault Kubernetes off method and attach our 
-newly created policy for our application service account. We'll also chat about that in just a second. We're setting a token, the host and our 
+newly created policy for our application service account. We'll also chat about that in just a second. 
+
+We're setting a token, the host and our 
 certificates. The reason why we're doing this is so that vault can communicate with Kubernetes. So that we can do policy enforcement for basically
 what applications can read what secrets. Alright, the final piece of setup here is we want to create an example username and password involved. The 
 end goal here is that this username and password will be injected into our target pods file system, which knows nothing about ball. I know this
