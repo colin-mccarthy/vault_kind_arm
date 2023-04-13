@@ -73,6 +73,10 @@ capabilities = ["read"]
 
 https://developer.hashicorp.com/vault/tutorials/kubernetes/kubernetes-sidecar
 
+```
+kubectl port-forward svc/hashicorp-vault 8200 -n vault
+```
+
 
 
 ```
