@@ -7,7 +7,10 @@
 
 ## Exec into the vault container
 
-`kubectl -n vault exec -it vault-0 -- sh`
+```
+kubectl exec -it hashicorp-vault-0  -- sh
+```
+
 
 find your address
 
