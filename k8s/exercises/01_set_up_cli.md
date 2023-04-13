@@ -74,13 +74,13 @@ capabilities = ["read"]
 https://developer.hashicorp.com/vault/tutorials/kubernetes/kubernetes-sidecar
 
 ```
-kubectl port-forward svc/hashicorp-vault 8200 -n vault
+kubectl port-forward svc/hashicorp-vault 8200 
 ```
 
 
 
 ```
-kubectl -n vault exec -it hashicorp-vault-0  -- sh
+kubectl exec -it hashicorp-vault-0  -- sh
 
 vault secrets enable -path=internal kv-v2
 
