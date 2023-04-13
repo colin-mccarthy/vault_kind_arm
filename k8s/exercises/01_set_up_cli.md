@@ -1,6 +1,6 @@
 ##
 
-### Vault sidecar injection via CLI (KV)
+### Vault sidecar injection via CLI (KVv2)
 
 ##
 
