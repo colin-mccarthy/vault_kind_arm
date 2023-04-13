@@ -12,7 +12,19 @@ kubectl exec -it hashicorp-vault-0  -- sh
 ```
 
 
+
+## create a secret
+
+```
+
+vault secrets enable -path=internal kv-v2
+
+vault kv put internal/database/config username="db-readonly-username" password="db-secret-password"
+```
+
+
 find your address
+
 
 ```
 / $
@@ -30,34 +42,41 @@ vault write auth/kubernetes/config \
     kubernetes_host="https://$KUBERNETES_PORT_443_TCP_ADDR:443"
 ```
 
-hostname `https://10.96.0.1:443`
+
+
+
+
+
+
+
+## create policy 
+
+```
+
+vault policy write internal-app - <<EOF
+path "internal/data/database/config" {
+  capabilities = ["read"]
+}
+EOF
+```
+
+## create a role
+
+```
+vault write auth/kubernetes/role/internal-app \
+    bound_service_account_names=internal-app \
+    bound_service_account_namespaces=default \
+    policies=internal-app \
+    ttl=24h
+
+exit
+```
 
 
 
 ## create a service account
 
 `kubectl create sa internal-app`
-
-
-## create policy 
-
-internal-app
-
-```
-path "internal/data/database/config"{
-capabilities = ["read"]
-}
-```
-
-
-## create a role
-
-
-
-
-## create a secret
-
-
 
 
 
