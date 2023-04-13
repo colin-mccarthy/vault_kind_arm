@@ -123,5 +123,18 @@ kubectl apply -f deployment.yaml
 ```
 
 
+```
+kubectl exec -it orgchart-78b559df9c-jfr59   -- sh
+
+
+cd /vault/secrets
+
+ls
+
+cat database-config.txt 
+
+data: map[password:db-secret-password username:db-readonly-username]
+metadata: map[created_time:2023-04-09T06:21:08.257897924Z custom_metadata:<nil> deletion_time: destroyed:false version:1]
+
 
 
