@@ -16,3 +16,14 @@ kubectl label --overwrite ns test-ns \
   pod-security.kubernetes.io/warn=baseline \
   pod-security.kubernetes.io/warn-version=v1.26
 ```
+  
+ 
+Create Role:  
+  
+```
+  vault write auth/kubernetes/role/internal-app \
+    bound_service_account_names=internal-app \
+    bound_service_account_namespaces=test-ns \
+    policies=internal-app \
+    ttl=24h
+```
