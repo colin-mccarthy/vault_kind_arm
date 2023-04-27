@@ -85,3 +85,5 @@ kubectl -n vault  exec -ti vault-0 -- vault license get
 
 https://developer.hashicorp.com/vault/docs/platform/k8s/helm/enterprise
 
+https://medium.com/@LachlanEvenson/hands-on-with-kubernetes-pod-security-admission-b6cac495cd11
+
