@@ -55,6 +55,15 @@ These scripts have been tested on my M1 ARM Macbook but should work on Intel as 
 [Exercise 01 - Set up with CLI 👷‍♂️](./k8s/exercises/01_set_up_cli.md)
 
 
+##
+
+### Security:
+
+
+
+[Exercise 01 - Under Construction 👷‍♂️](./db/exercises/sec.md)
+
+
 
 
 ##
