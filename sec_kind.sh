@@ -3,6 +3,7 @@
 #
 #
 
+
 set -oe errexit
 
 # desired cluster name; default is "kind"
@@ -15,6 +16,9 @@ echo "> initializing Kind cluster: ${KIND_CLUSTER_NAME}"
 cat <<EOF |  KIND_EXPERIMENTAL_PROVIDER=podman kind create cluster  --image kindest/node:v1.23.13 --name "${KIND_CLUSTER_NAME}" --config=-
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
+featureGates:
+ PodSecurity: true
+nodes:
 - role: control-plane
   kubeadmConfigPatches:
   - |
@@ -40,6 +44,7 @@ apiVersion: kind.x-k8s.io/v1alpha4
         seccomp-default: "true"
         feature-gates: "SeccompDefault=true"
 EOF
+
 
 
 
