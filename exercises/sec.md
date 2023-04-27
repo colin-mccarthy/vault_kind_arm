@@ -27,3 +27,9 @@ Create Role:
     policies=internal-app \
     ttl=24h
 ```
+
+Create SA:
+  
+```
+kubectl create sa internal-app -n test-ns
+```
