@@ -33,3 +33,10 @@ Create SA:
 ```
 kubectl create sa internal-app -n test-ns
 ```
+
+  
+Create Deployment:
+  
+```
+kubectl apply -f deployment.yaml -n test-ns
+```  
