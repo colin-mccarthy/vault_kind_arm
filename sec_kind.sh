@@ -71,4 +71,14 @@ secret=$(cat vault.hclic)
 
 
 
+secret=$(cat vault.hclic)
+
+kubectl create secret generic vault-ent-license --from-literal="license=${secret}" 
+
+helm install hashicorp hashicorp/vault  --create-namespace --set='ui.enabled=true' --set='ui.serviceType=NodePort' --set 'server.dev.enabled=true' -f config.yaml
+
+sleep 30
+
+
+
 
