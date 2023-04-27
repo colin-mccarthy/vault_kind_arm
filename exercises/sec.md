@@ -10,5 +10,5 @@ The following command warns the baseline Pod Security Standard pinned to v1.22 o
 ```
 kubectl label --overwrite ns test-ns \
   pod-security.kubernetes.io/warn=baseline \
-  pod-security.kubernetes.io/warn-version=v1.22
+  pod-security.kubernetes.io/warn-version=v1.26
 ```
