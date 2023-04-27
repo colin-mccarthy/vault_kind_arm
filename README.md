@@ -61,7 +61,7 @@ These scripts have been tested on my M1 ARM Macbook but should work on Intel as 
 
 
 
-[Exercise 01 - Under Construction 👷‍♂️](./db/exercises/sec.md)
+[Exercise 01 - Under Construction 👷‍♂️](./exercises/sec.md)
 
 
 
