@@ -42,3 +42,19 @@ Create Deployment:
 ```
 kubectl apply -f deployment.yaml -n test-ns
 ```  
+
+
+##
+
+I tested a few times with dry-run and an insecure deployment manifest.
+
+I used `kubectl label --dry-run=server --overwrite ns --all \ pod-security.kubernetes.io/enforce=restricted` I saw the warnings start to go away once I modified the manifest with all the security settings. The seccompProfile warning went away when I added the annotations.
+
+
+Unsecured:
+
+Warning: orgchart-78b559df9c-7zr2w: allowPrivilegeEscalation != false, unrestricted capabilities, runAsNonRoot != true, seccompProfile
+namespace/test-ns labeled (server dry run)
+
+Secured:
+
