@@ -58,3 +58,6 @@ namespace/test-ns labeled (server dry run)
 
 Secured:
 
+
+`k label ns test-ns pod-security.kubernetes.io/enforce=restricted`
+
